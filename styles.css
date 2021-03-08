@@ -1,0 +1,10 @@
+body {
+    background-color: rgba(43, 56, 55, 0.514);
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+ul{
+    list-style-type: square;
+}

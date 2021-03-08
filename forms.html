@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A HTML FORM">
+    <meta name="author" content="Chiagozie">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>
+        HTML FORM
+    </title>
+</head>
+
+<body>
+    <form>
+
+        <div>
+            <header>
+                <h1>Registeration form</h1>
+            </header>
+        </div>
+
+        <div>
+            <label>FirstName</label>
+            <input type="text" name='firstname' value="Ada" placeholder="firstname" required>
+        </div>
+
+        <div>
+            <label>LastName</label>
+            <input type="text" name='lastname' value="Micheals" placeholder="surname" required>
+        </div>
+
+        <div>
+            <label>Gender</label><br>
+            <!-- using the radio attribute without the name which should have d same value for all radio attributes attribute selects everything -->
+            <input type='radio' name="gender" required>male
+            <input type='radio' name="gender" required>female
+            <input type='radio' name="gender" required>prefer not to say
+        </div>
+
+        <div>
+            <label>email</label>
+            <input type="email" name='email' value="you@example.com" required>
+        </div>
+
+        <div>
+            <label>password</label>
+            <input type="password" name='password' value="pass" required>
+        </div>
+
+        <div>
+            <label>Phone Number</label>
+            <input type="number" name='phonenumber' placeholder="070xxxxx" required>
+        </div>
+
+        <div>
+            <label>Select Your Tribe </label>
+            <select required>
+                <option value="Igbo">Igbo</option>
+                <option value="Hausa">Hausa</option>
+                <option value="Yoruba">Yoruba</option>
+                <option value="NotListed">NotListed</option>
+            </select>
+        </div>
+
+        <div>
+            <label> Pick the sports of interest</label> <br>
+            <select selected='sports' required> <br>
+                <option value="Tennis">Tennis</option>
+                <option value="Football">Football</option>
+                <option value="Gymnastics">Gymnastics</option>
+                <option value="Judo">Judo</option>
+                <option value="volleyball">volleyball</option>
+                <option value="hockey">hockey</option>
+                <option value="sports" selected>sports</option>
+
+            </select>
+        </div>
+
+        <div>
+            <label>introduce yourself shortly</label><br>
+            <textarea rows="15" cols='50' maxlength="150"
+                required>let the team meet you(maxlenght of 150)</textarea><br> <br> <br>
+        </div>
+
+        <div>
+            <label>how did you hear about us?</label><br>
+            <input type="checkbox" name='how?'>social media
+            <input type="checkbox" name='how?'>word of mouth
+            <input type="checkbox" name='how?'>billboard
+            <input type="checkbox" name='how?'>others
+            <!-- same value for name attribute does not limit multiple selection -->
+        </div>
+
+        <div>
+            <label>Photo Upload</label><br>
+            <input type="file" name='image' required>
+        </div>
+
+
+        <div>
+            <button>submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
